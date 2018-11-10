@@ -4,7 +4,10 @@
   "description": "",
   "author": "akinshonibare <a.shonibare@queensu.ca>",
   "main": "functions/__main__.js",
-  "dependencies": {},
+  "dependencies": {
+    "lib": "^3.0.2",
+    "twilio": "^3.23.2"
+  },
   "private": true,
   "stdlib": {
     "build": "faaslang",
