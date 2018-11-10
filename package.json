@@ -5,6 +5,8 @@
   "author": "akinshonibare <a.shonibare@queensu.ca>",
   "main": "functions/__main__.js",
   "dependencies": {
+    "axios": "^0.18.0",
+    "jquery": "^3.3.1",
     "lib": "^3.0.1",
     "request": "^2.81.0",
     "twilio": "^3.3.0"

@@ -113,9 +113,10 @@ module.exports = (
     );
   } else {
     // No image, try to find a handler for the message, default to __notfound__
-    let handler = Body.toLowerCase()
+    let handler = Body.toLowerCase().split(" ")[0]
       .trim()
       .replace(/[^a-z0-9_-]/gi, "_");
+    
     lib[`${context.service.identifier}.messaging.${handler}`](
       {
         tel: from.number,
