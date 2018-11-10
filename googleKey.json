@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sturdy-ranger-222110",
+  "private_key_id": "e1812aa673ec57b805131df8d0e4d0311dee0333",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCpDC2ya5Qw6CTA\neWD3b/xbRSDrdQwfcTee1OUofPfZymeYBUCryP/1bS/7267AQP/1/nQldLTDEc40\neTpLXcDEWtgK5CSFvXc+5qvzPUGMYbshr1LNPgnga6lZFn5iWdToBw0Wq3HbXMVs\n7jYnJ0fUjlS2bih3af+3LT11amtOkAmWAz9cLD8QrwYIP33iRHVFVNU0FD125xJe\nKigHUAhB1tMEbAFurie9PqRdycjZDGFSKI47JbuHD5d6FFd7SUkqZ01cDVA+70rb\nNpBQYLdztgnvqtePqbUdb24enSZVQoDcxJrQQv2241OS2U5nraoYYUOhDqLqUgsp\n4YLG5mcXAgMBAAECggEAUx3gzgwlBdLuVxCXA7I1Ey8vG3YmasNBBMBKmBixyIzD\nWLSkcpJWf3abFCuUhYSwFWRx+QSj6BG2IIjGh83l/OVpuhkod/WLTwsd2m/w7bQT\nzWElxjJNquFkl5/+rh7bFuZ4of/T8HZxv7h0OdYPdEwzDKunC+e7SnZc9IFJl4tf\n+Owr4pjuC0qtFW/9jX5OMON3/B0UsmWvuZbynKBnAmHR1usgpubz8KljcyxtUIW/\ns5jDp+cPOGWKStnUKpV6xp3CwelnAJi+zC7YNBfawJfHnR74R5RH0lFXuEoPRYbi\nNC2ehRIFSJuY+AbPVoHER65GwfLkfn51mpXbjS/zaQKBgQDVU5Y5wxYvdN+RfC+H\ngGPK/GXxPs7ty5NxmqFpU0Dtb+B8elgYVQX4OB502IGB/v6PowkpYmeN0iUxK+al\nlhyEQR6H2naCRQqpTW+cP4AAjPvf3t1MSxWCfi16ZkbW5OIYcgg8lfJH2SX8f9Uu\nQJyWNiT8cS6/FXrSuKK1inPcEwKBgQDK3RMziy004AqHUcOXOcAYPLN9SvoZ0ROX\n3x7bc09jQMyaZYZXLkzfCTXr2AC7P8C05+Y02QoCVVPiDk17M3jaI3l2EgVzQaCQ\n9UJGX3MkrTxPy6XtyvtW+t2srptSJsCem1euHxvJ03fYBMn95phcUcIBs5FQYkN3\nIhTQLufhbQKBgHqf2bLKWW5eGEVgxVF2k+aSv2a1W+2FH/QllrMckC3sKXZkPU9/\nUDcmyxsPeSJomZundBS95Bi5u3dQbPyyFSJQ7GPbSFQJq982C/oc5k9quz4stbit\nUGf6b9n0ALR2TSEQK3voFaUHRbanJLu5mEkgRpJ13REqH7gROjZwp7jRAoGBAK3c\n22AJoCz49w0S3nb1X9Vl8M8pO0B1GD3JVEDwitGd771D1edSHz/oPPZsofPZp+dj\n+MDCYvms979+UpmMe785OBghSdqGHH8gNDTsCVsdvdsFxqgOl2rshqBA5Y16+Qr2\nSCdLMh2/x660LAoXX+1/hK7An4ItNXUdGIl0KffhAoGAapNXjLcmb0qzC66dk3xY\nRTwN8j46e9OY5zSUwAHpmMgy/6Duh+/t5sHxY/VOsZFdVOp/qWVe0fX/cCXMteP7\n4kBCHurnAwQW8pbOR50PfWzTCQiD8e+SkbYngJyIzc9C49QPXp+wCzRlnV19Qzww\ntA1vuLhq+JOt7AzZ1ajDGMA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tetxnet@sturdy-ranger-222110.iam.gserviceaccount.com",
+  "client_id": "105633033298185614984",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tetxnet%40sturdy-ranger-222110.iam.gserviceaccount.com"
+}

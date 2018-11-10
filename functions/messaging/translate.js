@@ -1,13 +1,19 @@
-var LanguageTranslatorV3 = require("watson-developer-cloud/language-translator/v3");
-
-var translator = new LanguageTranslatorV3({
-  version: "2018-05-01",
-  headers: {
-    "X-Watson-Technology-Preview": "2018-05-01",
-    "X-Watson-Learning-Opt-Out": true
-  }
-});
+const { Translate } = require("@google-cloud/translate");
+const axios = require("axios");
 
 module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
-  callback(null, "you want to translate");
+  let res = "";
+  console.log(body);
+  axios
+    .post(`https://6c0be464.ngrok.io/translate`, { text: body })
+    .then(function(response) {
+      console.log(response.data.result);
+      res = response.data.result;
+    })
+    .then(() => {
+      callback(null, res);
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
 };
