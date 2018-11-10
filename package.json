@@ -1,24 +1,23 @@
 {
-  "name": "textnet",
+  "name": "twilio-app",
   "version": "0.0.0",
   "description": "",
   "author": "akinshonibare <a.shonibare@queensu.ca>",
   "main": "functions/__main__.js",
   "dependencies": {
-    "@google-cloud/translate": "^2.1.2",
-    "async": "^2.6.1",
-    "fs": "0.0.1-security",
-    "lib": "^3.0.2",
-    "twilio": "^3.23.2"
+    "lib": "^3.0.1",
+    "request": "^2.81.0",
+    "twilio": "^3.3.0"
   },
   "private": true,
   "stdlib": {
     "build": "faaslang",
-    "name": "akinshonibare/textnet",
+    "name": "akinshonibare/twilio-app",
     "timeout": 10000,
     "personalize": {
       "keys": [],
       "user": []
-    }
+    },
+    "source": "twilio"
   }
 }
