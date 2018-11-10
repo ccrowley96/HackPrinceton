@@ -38,13 +38,7 @@ module.exports = (
     // We didn't find a command or match anything
     return callback(
       null,
-      `This is the default "not found" handler for SMS. Basically, if the ` +
-        `message does not match a function name in /functions/messaging/, it ` +
-        `will go here instead - where you can do regex matching or NLP, if you want.` +
-        `\n\n` +
-        "This is also the default handler for MMS (image, video) messages." +
-        `\n\n` +
-        `Try saying, "I like cookies" to see a regex-handled response, or try sending an image of food`
+      `Sorry, we can't help you with that!  Type "textnet" for a list of available functions.  Please check your formatting carefully.`
     );
   }
 };
