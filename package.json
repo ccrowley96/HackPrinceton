@@ -1,0 +1,18 @@
+{
+  "name": "textnet",
+  "version": "0.0.0",
+  "description": "",
+  "author": "akinshonibare <a.shonibare@queensu.ca>",
+  "main": "functions/__main__.js",
+  "dependencies": {},
+  "private": true,
+  "stdlib": {
+    "build": "faaslang",
+    "name": "akinshonibare/textnet",
+    "timeout": 10000,
+    "personalize": {
+      "keys": [],
+      "user": []
+    }
+  }
+}
