@@ -24,7 +24,6 @@ module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
         tranportation_mode = 'driving';
     }
     
-
     axios.get(`https://maps.googleapis.com/maps/api/directions/json?origin=${origin_addr}&destination=${dest_addr}&mode=${tranportation_mode}&key=${process.env.MAPS_API_KEY}`)
     .then(function (response) {
         //Parse Directions
@@ -35,7 +34,7 @@ module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
             res = directionList.join('\n\n');
          });
     }).then(() =>{
-        let trans_mode = tranportation_mode + "directions ";
+        let trans_mode = tranportation_mode + " directions ";
         if(res.length > 1500){
             callback(null, trans_mode + "limited to 1500 chars...\n" + res.substr(0,1500) + "\n.....");
         }else{
