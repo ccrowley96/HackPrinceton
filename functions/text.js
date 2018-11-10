@@ -1,11 +1,15 @@
 const lib = require('lib')
-const MessagingResponse = require('twilio').twiml.MessagingResponse;
+const acccountSid = process.env.TWILIO_SID
+const authToken = process.env.TWILIO_TOKEN
+const client = require('twilio')(acccountSid, authToken)
 
-module.exports = (context, callback) => {
+module.exports = async (context) => {
+   let text = context["params"].Body;
+   let sender = context["params"].From;
 
-    const twiml = new MessagingResponse();
-    twiml.message(context["params"].Body);
-
-    console.log(context["params"].Body);
-    callback(null, twiml.toString());  
+   await client.messages.create({
+       to: sender,
+       from: '+14318004137',
+       body: text
+   }).then(msg => console.log(msg.sid))
 };
