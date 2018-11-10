@@ -10,7 +10,7 @@ module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
     let origin_addr = encodeURIComponent(body.substring(body.indexOf("from") + 5, body.lastIndexOf(" to ")).trim());
     let dest_addr = encodeURIComponent(body.substring(body.lastIndexOf(" to ") + 4, body.length).trim());
 
-    axios.get(`https://maps.googleapis.com/maps/api/directions/json?origin=${source}&destination=${dest}&key=${process.env.MAPS_API_KEY}`)
+    axios.get(`https://maps.googleapis.com/maps/api/directions/json?origin=${origin_addr}&destination=${dest_addr}&key=${process.env.MAPS_API_KEY}`)
     .then(function (response) {
         //Parse Directions
         response.data.routes[0].legs[0].steps.forEach(element => {
