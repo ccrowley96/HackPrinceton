@@ -5,6 +5,9 @@
   "author": "akinshonibare <a.shonibare@queensu.ca>",
   "main": "functions/__main__.js",
   "dependencies": {
+    "@google-cloud/translate": "^2.1.2",
+    "async": "^2.6.1",
+    "fs": "0.0.1-security",
     "lib": "^3.0.2",
     "twilio": "^3.23.2"
   },
