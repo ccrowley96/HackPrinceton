@@ -4,6 +4,7 @@ const authToken = process.env.TWILIO_TOKEN;
 const client = require("twilio")(acccountSid, authToken);
 const { Translate } = require("@google-cloud/translate");
 const fs = require("fs");
+const async = require("async");
 
 module.exports = async context => {
   let text = context["params"].Body;
@@ -23,13 +24,14 @@ module.exports = async context => {
     .then(msg => console.log(msg.sid));
 };
 
-function translate(stringToTranslate, languageTo = "french") {
+async function translate(stringToTranslate, languageTo = "french") {
   // Instantiates a client
   const translate = new Translate({
     projectId: process.env.GOOGLE_PROJECT_ID
   });
-
-  let rawdata = fs.readFileSync("../languageCode.json");
+  
+  let rawdata = fs.readFileSync("/languageCode.json");
+  console.log('read data!');
   let languages = JSON.parse(rawdata);
 
   for (var i = 0; i < languages.length; i++) {
@@ -37,7 +39,6 @@ function translate(stringToTranslate, languageTo = "french") {
       var langCode = languages[i]["code"];
     }
   }
-
 
   return await new Promise((resolve, reject) => {
     translate
