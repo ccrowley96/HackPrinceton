@@ -95,7 +95,7 @@ module.exports = (
             }
 
             // We got the image, and send it as a buffer using the `media` param
-            lib[`${context.service.identifier}.messaging.__notfound__`](
+            lib[`${context.service.identifier}.messaging.image`](
               {
                 tel: from.number,
                 media: body,

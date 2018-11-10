@@ -20,6 +20,7 @@ module.exports = (
 ) => {
   if (media) {
     // We got an image!
+    console.log(media);
     return callback(null, `Yep, looks like a picture to me.`);
   } else if (body.match(LIKE_REGEX)) {
     // We matched some regex
