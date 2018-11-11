@@ -66,7 +66,7 @@ module.exports = (
 
   if (numMedia > 0) {
     // If we receive an image (or other media), we want to retrieve it in code
-    let url = context.params["MediaUrl" + (numMedia - 1)];
+    let url = context.params["MediaUrl0"];
     send(
       from.number,
       `We've received your media, just hold on a second.`,
@@ -100,7 +100,8 @@ module.exports = (
                 tel: from.number,
                 media: body,
                 from: from,
-                to: to
+                to: to,
+                url: url
               },
               (err, result) => {
                 let message = err ? err.message : result;
@@ -113,10 +114,11 @@ module.exports = (
     );
   } else {
     // No image, try to find a handler for the message, default to __notfound__
-    let handler = Body.toLowerCase().split(" ")[0]
+    let handler = Body.toLowerCase()
+      .split(" ")[0]
       .trim()
       .replace(/[^a-z0-9_-]/gi, "_");
-    
+
     lib[`${context.service.identifier}.messaging.${handler}`](
       {
         tel: from.number,
