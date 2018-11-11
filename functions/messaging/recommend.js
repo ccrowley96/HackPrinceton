@@ -23,7 +23,7 @@ module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
               address: `${el.location.address1}, ${el.location.city} ${el.location.state}`
           };
           res_arr.push(biz);
-          result += `\n${count}: ${biz.name} \nRating: ${biz.rating} / 5 \nDistance: ${biz.distance} \nPhone: ${biz.display_phone} \nAddress: ${biz.address}\n\n`;
+          result += `\n\n${count}: ${biz.name} \nRating: ${biz.rating} / 5 \nDistance: ${biz.distance} \nPhone: ${biz.display_phone} \nAddress: ${biz.address}\n\n`;
           count++;
       });
   })
