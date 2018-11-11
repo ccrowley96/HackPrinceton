@@ -23,11 +23,12 @@ module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
               address: `${el.location.address1}, ${el.location.city} ${el.location.state}`
           };
           res_arr.push(biz);
-          result += `${count}: Name: ${biz.name} 
-              \tRating: ${biz.rating} / 5
-              \tDistance: ${biz.distance}
-              \tPhone: ${biz.display_phone}
-              \tAddress: ${biz.address}\n\n`;
+          result += 
+          `${count}: Name: ${biz.name} 
+          Rating: ${biz.rating} / 5
+          Distance: ${biz.distance}
+          Phone: ${biz.display_phone}
+          Address: ${biz.address}\n\n`;
           count++;
       });
   })
