@@ -1,14 +1,19 @@
-const { Translate } = require("@google-cloud/translate");
 const axios = require("axios");
 
 module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
   let res = "";
-  console.log(body);
+  let query = body
+    .substring(body.lastIndexOf("query ") + 6, body.lastIndexOf(""))
+    .trim()
+    .replace(" ", "+");
+
   axios
-    .post(`https://687e8f4c.ngrok.io/translate`, { text: body })
+    .get(
+      `http://api.wolframalpha.com/v1/result?appid=WLAQQ9-YP923PK67P&i=${query}`
+    )
     .then(function(response) {
-      console.log(response.data.result);
-      res = response.data.result;
+      console.log(response.data);
+      res = response.data;
     })
     .then(() => {
       callback(null, res);
