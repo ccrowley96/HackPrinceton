@@ -5,7 +5,7 @@ module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
   let res = "";
   console.log(body);
   axios
-    .post(`https://6c0be464.ngrok.io/translate`, { text: body })
+    .post(`https://687e8f4c.ngrok.io/translate`, { text: body })
     .then(function(response) {
       console.log(response.data.result);
       res = response.data.result;
