@@ -9,7 +9,8 @@ module.exports = (tel = "", body = "", from = {}, to = {}, callback) => {
         '\n\n4. "recommend" - format: "recommend [business] near [location]"\
                 \nBusiness - for example "food" or "restaurants". The term may also be business names, such as "Starbucks\
                 \nLocation, for example "New York City", "NYC", "350 5th Ave,"',
-        '\n\n5. *image upload* - upload any image for information about the image contents'
+        '\n\n6. "query" - format: "query [any question]',                
+        '\n\n6. *image upload* - upload any image for information about the image contents'
       ].join("\n")
     );
   };
