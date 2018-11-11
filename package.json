@@ -15,7 +15,8 @@
     "request": "^2.81.0",
     "striptags": "^3.1.1",
     "twilio": "^3.3.0",
-    "watson-developer-cloud": "^3.13.0"
+    "watson-developer-cloud": "^3.13.0",
+    "yelp-fusion": "^2.2.1"
   },
   "private": true,
   "stdlib": {

@@ -9,11 +9,9 @@ module.exports = (tel, context, callback) => {
   send(
     tel,
     [
-      `Welcome to your Twilio Messaging Hub on StdLib!`,
+      `Welcome to TextNet on StdLib!`,
       "",
-      `To get started, try sending MORE, WHOAMI, ask something of your choosing,` +
-        ` or you can even try sending a picture message!`,
-      "",
+      `To get started, try sending "textnet" to learn about the functionality` +      
       "To prevent future messages, please respond STOP at any time."
     ].join("\n"),
     null,
